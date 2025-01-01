@@ -1,0 +1,51 @@
+.pie {
+    display: inline-block;
+    margin: .5em;
+    width: 15em;
+    height: 15em;
+    position: relative;
+    border-radius: 10%;
+  }
+  
+  .pie:after {
+    border-radius: 10%;
+    display: block;
+    content: "";
+    /*background: #fff;*/
+    position: absolute;
+      left: .5em;
+    top: .5em;
+    height: 14em;
+    width: 14em;
+  }
+
+  img {
+    display: inline-block;
+    border-radius: 10%;
+    margin: .5em;
+    width: 14em;
+    height: 14em;
+    position: relative;
+    border-radius: 10%;
+  }
+  
+  
+  
+  .p1 {
+    background-image: linear-gradient(-20deg, #ddd 50%, transparent 50%),
+                      linear-gradient(90deg, #ddd 50%, #22b12e 50%);
+  }
+  
+  .p2 {
+    background-image: linear-gradient(90deg, #ddd 50%, #22b12e 50%);
+  }
+  
+  .p3 {
+    background-image: linear-gradient(150deg, transparent 50%, #22b12e 50%),
+                      linear-gradient(90deg, #ddd 50%, #22b12e 50%);
+  }
+  
+  .p4 {
+    background-image: linear-gradient(270deg, transparent 50%, #22b12e 50%),
+                      linear-gradient(180deg, #ddd 50%, #22b12e 50%);
+  }
