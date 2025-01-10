@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  
-  background-color:rgb(173, 221, 252) 
-  
-}
 
 img {
   display: inline-block;
@@ -15,11 +7,15 @@ img {
   height: 188px;
   position: relative;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  
+}
+
+.achievements{
+  display: flex;
 }
 
 .count{
   background-color: rgba(252, 252, 0, 1);
+  display: flex;
   width: 20px;
   height: 20px;
   padding-left: 8px;
@@ -36,31 +32,28 @@ img {
 
 
 .progress-circle {
-  --color: rgb(43, 172, 38);
-  --color-2: rgb(250, 241, 241);
-  --circle-size: 200px;
-  --border-width: 10px;
-
-  width: var(--circle-size);
-  height: var(--circle-size);
+  display: flex;
+  
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin: .5em;
-  background-image: conic-gradient(var(--color) var(--progress), var(--color-2) 0);
+  background: conic-gradient(rgb(43, 172, 38) var(--progress), rgb(241, 241, 241) 0);
   
   position: relative;
 }
 
 .progress-circle::after {
-  --inner-circle-size: calc(var(--circle-size) - var(--border-width));
-  --inner-circle-gap: calc(var(--border-width) / 2);
+  --inner-circle-size: calc(200px - 10px);
+  --inner-circle-gap: calc(10px / 2);
 
   content: '';
-  width: var(--inner-circle-size);
-  height: var(--inner-circle-size);
+  width: calc(200px - 10px);
+  height: calc(200px - 10px);
   
   border-radius: 50%;
   position: absolute;
-  left: var(--inner-circle-gap);
-  top: var(--inner-circle-gap);
+  left: calc(10px / 2);
+  top: calc(10px / 2);
   /*box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5);*/
 }
