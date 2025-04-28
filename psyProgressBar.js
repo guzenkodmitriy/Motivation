@@ -88,13 +88,13 @@ function lineTime(textTeg,progress__line,valueMax){
 					nums ++;
 					procentStep = procentStep+procent;
 					progress = parseInt(procentStep);
-					div.style.width = num + "px" ;
+					div.style.width = num + 'px' ;
 					textTeg.innerHTML = progress + '%'
-					//alert(p + " : " + num + " : " + procent)
+					//alert(p + ' : ' + num + ' : ' + procent)
 					if(nums + 1 >= valueMax){
 							textTeg.innerHTML = 100 + '%'
 							progress__line.value = 100;
-							div.style.width = progress__line.parentNode.offsetWidth + "px" ;
+							div.style.width = progress__line.parentNode.offsetWidth + 'px' ;
 							clearInterval(set);
 							return;
 					}

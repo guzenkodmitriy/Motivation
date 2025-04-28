@@ -1,38 +1,47 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style2.css">
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='style2.css'>
     </head>
     <body>
-        <div class="achivment">
-            <div class="progress">
-                <div class="progress-circle" style="--progress: 10%;">
-                    <img src="НеизвестнаяУлитка.jpg">
-                </div>
-                <div class="title-header">Астронавт добра</div>
-            </div>
-            <div class="progress">
-                <div class="progress-circle" style="--progress: 50%;">
-                    <img src="Улитка3.png" alt="">
-                    <div class="count">5</div>
-                </div>
-                <div class="title-header">Галактичний благодійник</div>
-            </div>
-            <div class="progress">
-                <div class="progress-circle" style="--progress: 75%;">
-                    <img src="Улитка3.png" alt="">
-                    <span class="count">2</span>
-                </div>
-                <div class="title-header">Космонавт добра</div>
-            </div>
-            <div class="progress">
-                <div class="progress-circle" style="--progress: 90%;">
-                    <img src="Улитка3.png" alt="">
-                </div>   
-                <div class="title-header">Перший політ</div>
-            </div>
+
+      <div class='scores-header'>
+        <div class='scores-title'>Зараховані бали</div>
+        <div class='scores-amount'>150</div>
+      </div>
+    
+    <div class="achievements-header">
+        <div>
+            <img src='Исходники/ГУ_улитка-заголовок_2.png'>
+            ГАЛАКТИКА
+            
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div>успіху</div>
+    </div>
+    
+    <div class="achievements-header-ship">
+        <img src='Исходники/ГУ_косм-корабль.png'>
+    </div>
+
+    <div class='achievements-border'>
+      <div class='progress'>
+        <svg viewBox="0 0 120 120">
+          <circle class="circle-bg"/>
+          <circle class="circle-fg" stroke-dasharray="339.292" stroke-dashoffset="300"/>
+        </svg>
+        <img src='Улитки/ачивки_19_Оптімус Прайм.png'/>
+        <div class='count'>12</div>
+        <div class='name-achieve'>Люк Скайуокер</div>
+        <div class='help-tip'>
+          <img src='Улитки/ачивки_20_Зоряний Вчитель.png'>
+          <div class = 'help-tip-text'>
+            <div class='help-tip-header'>Люк Скайуокер</div>
+            <div class='help-tip-goal'>Проходь тестування у списку топ-перших за терміном та отримуй 50 балів</div>
+            <div class='help-tip-result'>1 з 10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
